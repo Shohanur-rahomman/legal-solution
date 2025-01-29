@@ -11,11 +11,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <style>
     .myFont {
   font-family: "EB Garamond", serif;
 }
+.poppins-font {
+  font-family: "Poppins", serif;
+}
 </style>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#B68C5A',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
 <body class="myFont">
@@ -41,7 +60,7 @@
                     </ul>
                 </div>
                 <div class="flex">
-                    <div class="flex flex-col items-center justify-center md:w-9 md:h-9 mr-4">
+                    <div class="flex flex-col items-center justify-center w-7 h-7 md:w-9 md:h-9 mr-4">
                         <img class="mr-4" src="./images/new-logo.png" alt="">
                         <img src="./images/Vector.png" alt="">
                     </div>
@@ -58,10 +77,24 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn">Button</a>
+                <a class="btn bg-primary-color text-white">Free Consultation</a>
             </div>
         </div>
         <!-- navbar -->
+         <!-- banner -->
+          <section class="container mx-auto mt-8 text-white text-center  ">
+             <div class="banner w-[90%] h-[550px] mx-auto flex flex-col items-center justify-center p-3">
+                <h2 class="text-5xl font-extrabold mb-4">We Provide Effective Legal Solutions</h2>
+                <p class="text-xl poppins-font mb-12">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+                <div class=" ">
+                    <label for="text">
+                        <input class="text-black poppins-font bg-white py-3 mr-4 px-5 rounded-lg w-[500px]" type="text" value="Search your services">
+                    </label>
+                    <button class="btn bg-primary-color text-xl text-white">Search</button>
+                </div>
+             </div>
+          </section>
+         <!-- banner -->
     </header>
     <main></main>
     <footer></footer>
